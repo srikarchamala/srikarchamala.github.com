@@ -10,7 +10,7 @@
 		
 		<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
 <link rel="stylesheet" type="text/css" href="http://cdn1.editmysite.com/editor/libraries/fancybox/fancybox.css?1234" />
-<link rel="stylesheet" type="text/css" href="files/main_style.css?1431195099" title="wsite-theme-css" />
+<link rel="stylesheet" type="text/css" href="files/main_style.css?1436986048" title="wsite-theme-css" />
 <link href='http://fonts.googleapis.com/css?family=Lato:400,300,300italic,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
 
@@ -48,21 +48,21 @@ var STATIC_BASE = '//cdn1.editmysite.com/';
 var STYLE_PREFIX = 'wsite';
 //-->
 </script>
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
 
-<script src="http://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script><script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
+<script src="http://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script><script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/ftl.js?buildTime=1234"></script><script>_W.relinquish && _W.relinquish()</script>
 <script type="text/javascript"><!--
 	var IS_ARCHIVE = 1;
 	
 	(function(jQuery){
 		function initFlyouts(){
 			initPublishedFlyoutMenus(
-				[{"id":"963077351779198537","title":"Home","url":"index.html","target":""},{"id":"283863555600145217","title":"CV","url":"cv.html","target":""},{"id":"430658820693756186","title":"Publications","url":"publications.html","target":""},{"id":"982310335120146381","title":"Presentations","url":"presentations.html","target":""}],
+				[{"id":"963077351779198537","title":"Home","url":"index.html","target":""},{"id":"283863555600145217","title":"CV","url":"cv.html","target":""},{"id":"430658820693756186","title":"Publications","url":"publications.html","target":""},{"id":"982310335120146381","title":"Presentations","url":"presentations.html","target":""},{"id":"700184943996227885","title":"Collaboration\/Consulting","url":"collaborationconsulting.html","target":""}],
 				"283863555600145217",
 				"<li class=\"wsite-menu-item-wrap\"><a href=\"#\" data-membership-required=\"\" class=\"wsite-menu-item\">{{title}}<\/a><\/li>",
 				'active',
 				false,
-				{"site\/menu\/submenu-main":"<div class=\"wsite-menu-wrap\" style=\"display:none\">{{! Designer note: \"wsite-menu-wrap\" required on submenu wrapper }}\n\t<ul class=\"wsite-menu\">{{! Designer note: \"wsite-menu\" required on submenu element }}\n\t\t{{#children}}{{> site\/menu\/submenu-item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","site\/menu\/submenu-item":"<li{{#id}} id=\"{{id}}\"{{\/id}} class=\"wsite-menu-subitem-wrap{{#current_page}} wsite-nav-current{{\/current_page}}\">{{! Designer note: id required & \"wsite-menu-subitem-wrap\" required on the item wrap }}\n\t<a href=\"{{itemlink}}\"{{#target}} target=\"{{target}}\"{{\/target}} class=\"wsite-menu-subitem\">{{! Designer note: \"wsite-menu-subitem\" required on the item link }}\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{itemtitle}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> site\/menu\/submenu-main}}{{\/has_children}}\n<\/li>\n","site\/menu\/main":"<ul class=\"wsite-menu-default\">{{> site\/menu\/main-without-wrap}}<\/ul>{{! Designer note: \"wsite-menu-default\" required on menu element }}\n","site\/menu\/main-without-wrap":"{{#links}}{{!\n}}{{#current_page}}{{> site\/menu\/item-current}}{{\/current_page}}{{!\n}}{{^current_page}}{{> site\/menu\/item}}{{\/current_page}}{{!\n}}{{\/links}}\n","site\/menu\/item-current":"<li{{#id}} id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">{{! Designer note: id required & \"wsite-menu-item-wrap\" required on the item wrapper }}\n\t<a href=\"{{itemlink}}\"{{#target}} target=\"{{target}}\"{{\/target}} class=\"wsite-menu-item\">{{! Designer note: \"wsite-menu-item\" required on the item link }}\n\t\t{{{itemtitle}}}\n\t<\/a>\n\t{{#has_children}}{{> site\/menu\/submenu-main}}{{\/has_children}}\n<\/li>\n","site\/menu\/item":"<li{{#id}} id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">{{! Designer note: id required & \"wsite-menu-item-wrap\" required on the item wrapper }}\n\t<a href=\"{{itemlink}}\" data-membership-required=\"{{membership-required}}\"{{#target}} target=\"{{target}}\"{{\/target}} class=\"wsite-menu-item\">{{! Designer note: \"wsite-menu-item\" required on the item link }}\n\t\t{{{itemtitle}}}\n\t<\/a>\n\t{{#has_children}}{{> site\/menu\/submenu-main}}{{\/has_children}}\n<\/li>\n"}
+				{"menu\/submenu-main":"<div class=\"wsite-menu-wrap\" style=\"display:none\">{{! Designer note: \"wsite-menu-wrap\" required on submenu wrapper }}\n\t<ul class=\"wsite-menu\">{{! Designer note: \"wsite-menu\" required on submenu element }}\n\t\t{{#children}}{{> menu\/submenu-item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","menu\/submenu-item":"<li{{#id}} id=\"{{id}}\"{{\/id}} class=\"wsite-menu-subitem-wrap{{#current_page}} wsite-nav-current{{\/current_page}}\">{{! Designer note: id required & \"wsite-menu-subitem-wrap\" required on the item wrap }}\n\t<a href=\"{{itemlink}}\"{{#target}} target=\"{{target}}\"{{\/target}} class=\"wsite-menu-subitem\">{{! Designer note: \"wsite-menu-subitem\" required on the item link }}\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{itemtitle}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> menu\/submenu-main}}{{\/has_children}}\n<\/li>\n","menu\/main":"<ul class=\"wsite-menu-default\">{{> menu\/main-without-wrap}}<\/ul>{{! Designer note: \"wsite-menu-default\" required on menu element }}\n","menu\/main-without-wrap":"{{#links}}{{!\n}}{{#current_page}}{{> menu\/item-current}}{{\/current_page}}{{!\n}}{{^current_page}}{{> menu\/item}}{{\/current_page}}{{!\n}}{{\/links}}\n","menu\/item-current":"<li{{#id}} id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">{{! Designer note: id required & \"wsite-menu-item-wrap\" required on the item wrapper }}\n\t<a href=\"{{itemlink}}\"{{#target}} target=\"{{target}}\"{{\/target}} class=\"wsite-menu-item\">{{! Designer note: \"wsite-menu-item\" required on the item link }}\n\t\t{{{itemtitle}}}\n\t<\/a>\n\t{{#has_children}}{{> menu\/submenu-main}}{{\/has_children}}\n<\/li>\n","menu\/item":"<li{{#id}} id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">{{! Designer note: id required & \"wsite-menu-item-wrap\" required on the item wrapper }}\n\t<a href=\"{{itemlink}}\" data-membership-required=\"{{membership-required}}\"{{#target}} target=\"{{target}}\"{{\/target}} class=\"wsite-menu-item\">{{! Designer note: \"wsite-menu-item\" required on the item link }}\n\t\t{{{itemtitle}}}\n\t<\/a>\n\t{{#has_children}}{{> menu\/submenu-main}}{{\/has_children}}\n<\/li>\n"}
 			)
 		}
 		if (jQuery) {
@@ -107,6 +107,12 @@ var STYLE_PREFIX = 'wsite';
 	</a>
 	
 </li>
+<li id="pg700184943996227885" class="wsite-menu-item-wrap">
+	<a href="collaborationconsulting.html" data-membership-required="0" class="wsite-menu-item">
+		Collaboration/Consulting
+	</a>
+	
+</li>
 
 </ul>
 </td>
@@ -139,6 +145,12 @@ var STYLE_PREFIX = 'wsite';
 <li id="pg982310335120146381" class="wsite-menu-item-wrap">
 	<a href="presentations.html" data-membership-required="0" class="wsite-menu-item">
 		Presentations
+	</a>
+	
+</li>
+<li id="pg700184943996227885" class="wsite-menu-item-wrap">
+	<a href="collaborationconsulting.html" data-membership-required="0" class="wsite-menu-item">
+		Collaboration/Consulting
 	</a>
 	
 </li>
@@ -396,32 +408,7 @@ var STYLE_PREFIX = 'wsite';
 					
 						
 
-<div class="paragraph" style="text-align:left;"><strong>&nbsp;Bioinformatics Scientist</strong>&nbsp;<font size="2"><em>-&nbsp;</em><em>Dr. Patrick Concannon&rsquo;s Lab, University of Florida, Gainesville, FL, USA</em></font><br /><ul style=""><li><font size="2"><span style="line-height: 1.5; background-color: initial;">Expression quantitative trait loci (e-QTL) to identify associations between genotype and gene expression in human Type 1 diabetes (T1D) using</span><span style="line-height: 1.5; background-color: initial;">&nbsp;expression</span><span style="line-height: 1.5; background-color: initial;">&nbsp;and genotype&nbsp;</span><span style="line-height: 1.5; background-color: initial;">arrays derived from multiple cell types from T1D human patients and controls.</span></font></li><li style=""><font size="2">Study DNA damage after ionizing radiation exposure by investigate structural, copy number, and nucleotide variations in whole genome sequence data derived from cells surviving exposure to ionizing radiation.</font></li></ul></div>
-
-
-					
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div>
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:17.619047619048%; padding:0 15px;">
-					
-						
-
-<div class="paragraph" style="text-align:left;"><span style="">Aug 2014 - Present</span></div>
-
-
-					
-				</td>				<td class="wsite-multicol-col" style="width:82.380952380952%; padding:0 15px;">
-					
-						
-
-<div class="paragraph" style="text-align:left;"><strong style="">Bioinformatics Research Consultant</strong><span style="">&nbsp;</span>(part-time)<em><font size="2"> -&nbsp;RAPiD Genomics, Gainesville, FL, USA&nbsp;&nbsp;</font></em><font size="3"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br /></font><span style="font-size: small;">RAPiD Genomics is a DNA genotyping and genetic data analysis company. They provide the full suite of tools and analytical methods to researchers and breeders that wish to characterize genetic variation and/or advance breeding.</span><br /><ul style=""><li style=""><span style=""><font size="2">Develop and improve high-throughput and efficient bioinformatics methodologies and pipelines for cost-effective DNA genotyping and probe design.</font></span></li></ul></div>
+<div class="paragraph" style="text-align:left;"><strong>&nbsp;Bioinformatics Scientist</strong>&nbsp;<font size="2"><em>-&nbsp;</em><em>Dr. Patrick Concannon&rsquo;s Lab, University of Florida, Gainesville, FL, USA</em></font><br /><font size="2"><span style="">As a Bioinformatics Scientist &nbsp;at&nbsp;University&nbsp;of Florida Genetics Institute in Dr. Patric Concannon's lab, m<span style="">y research involves bioinformatic analyses of sequence-based data sets from several different projects in the laboratory.</span></span><br /></font><ul style=""><li style=""><font size="2">Alignment and variant calling for targeted sequencing of the <em>ATM</em> and <em>PPM1D</em> genes in the <a href="http://skiweb.mskcc.org/WeCare/front.html" target="_blank" title="">WECARE Study</a> of contralateral breast cancer.</font></li><li style=""><font size="2"><span style="">Expression quantitative trait loci (e-QTL) studies to identify associations between genotype and gene expression in human Type 1 diabetes (T1D) using</span><span style="">&nbsp;expression</span><span style="">&nbsp;and genotype&nbsp;</span><span style="">arrays derived from various cell types isolated from T1D human patients and controls.</span></font></li><li style=""><font size="2">Study DNA damage after ionizing radiation exposure by investigate structural, copy number, and nucleotide variations in whole genome sequence data derived from cells surviving exposure to ionizing radiation.</font></li></ul></div>
 
 
 					
@@ -446,32 +433,7 @@ var STYLE_PREFIX = 'wsite';
 					
 						
 
-<div class="paragraph" style="text-align:left;"><strong>Graduate Research Assistant </strong><em><font size="2">-&nbsp;Dr. Brad Barbazuk Lab, University of Florida, Gainesville, FL, USA</font></em><em><br /></em><ul style=""><li style=""><font size="2"><span style="">Evolutionary conservation and divergence of alternative splicing (AS):&nbsp;</span><span style="">This study investigated the evolutionary conservation and divergence of AS patterns in genes duplicated by independent whole genome duplication events during the evolutionary histories of flowering plants.</span></font></li><li style=""><font size="2">The Amborella Genome Project - generating a reference sequence for angiosperm evolutionary analysis:&nbsp;<span style="">This project generated a high-quality genome sequence for the non-model plant&nbsp;<em style="">Amborella</em>, using a novel and relatively inexpensive genome assembly and validation strategy facilitated by next-generation sequencing (NGS) technologies,&nbsp;<em style="">fluorescence in situ hybridization</em>&nbsp;(FISH), and Whole Genome Mapping.</span></font></li></ul></div>
-
-
-					
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div>
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:17.619047619048%; padding:0 15px;">
-					
-						
-
-<div class="paragraph" style="text-align:left;"><span style="">Aug 2013 - Dec 2013</span></div>
-
-
-					
-				</td>				<td class="wsite-multicol-col" style="width:82.380952380952%; padding:0 15px;">
-					
-						
-
-<div class="paragraph" style="text-align:left;"><strong style="">Bioinformatics Research Scientist</strong><span style="">&nbsp;</span>(part-time) <em><font size="2">-&nbsp;RAPiD Genomics, Gainesville, FL, USA</font></em><em><br /></em><font size="2">RAPiD Genomics is a DNA genotyping and genetic data analysis company. They provide the full suite of tools and analytical methods to researchers and breeders that wish to characterize genetic variation and/or advance breeding.</font><br /><ul style=""><li style=""><span style=""><font size="2">Developed high-throughput and efficient bioinformatics methodologies and pipelines for cost-effective DNA genotyping and probe design.&nbsp;</font></span></li><li style=""><span style=""><font size="2">Improved methods for sequence variant discovery.</font></span></li></ul></div>
+<div class="paragraph" style="text-align:left;"><strong>Graduate Research Assistant </strong><em><font size="2">- University of Florida, Gainesville, FL, USA</font></em><br /><ul style=""><li style=""><font size="2"><span style="">Evolutionary conservation and divergence of alternative splicing (AS):&nbsp;</span><span style="">This study investigated the evolutionary conservation and divergence of AS patterns in genes duplicated by independent whole genome duplication events during the evolutionary histories of flowering plants.</span></font></li><li style=""><font size="2">The Amborella Genome Project - generating a reference sequence for angiosperm evolutionary analysis:&nbsp;<span style="">This project generated a high-quality genome sequence for the non-model plant&nbsp;<em style="">Amborella</em>, using a novel and relatively inexpensive genome assembly and validation strategy facilitated by next-generation sequencing (NGS) technologies,&nbsp;<em style="">fluorescence in situ hybridization</em>&nbsp;(FISH), and Whole Genome Mapping.</span></font></li></ul></div>
 
 
 					
@@ -496,7 +458,7 @@ var STYLE_PREFIX = 'wsite';
 					
 						
 
-<div class="paragraph" style="text-align:left;"><strong style="">Biological Scientist</strong>&nbsp;(computational biology)<font size="2"><em> -&nbsp;Dr. Brad Barbazuk Lab, University of Florida, Gainesville, FL, USA</em></font><em><br /></em><font size="2">As a Biological Scientist in computational biology at UF's Genetics Institute in Dr. Brad Barbazuk's lab, I was involved in wide variety of genomic and transcriptomic projects. Below are brief details of the some of the main projects that I impacted.</font><br /><ul style=""><li style=""><font size="2"><span style="">Computational gene prediction in Tomato Whole Genome:&nbsp;</span><span style="">A computational pipeline was developed to construct a highly comprehensive training set of well annotated tomato genes, and then used this set to re-train TWINSCAN ab initio gene finder to accurately identify genes in the tomato whole genome sequence.&nbsp;</span></font></li><li style=""><font size="2"><span style="">Strawberry global gene expression:&nbsp;</span><span style="">A novel computational approach was developed to obtain comprehensive coverage of the cultivated strawberry (<em style="">Fragaria</em>&nbsp;&times;&nbsp;<em style="">ananassa</em>&nbsp;Duchesne) transcriptome.</span></font></li><li style=""><font size="2"><span style="">Genome evolution in natural populations and synthetic lines of&nbsp;<em style="">Tragopogon</em>:&nbsp;</span><span style="">This project involved understanding the impact of polyploidization on genome evolution and gene function using&nbsp;<em style="">Tragopogon</em>&nbsp;(sunflower family) as a model organism. Computational pipelines were developed to accelerate the identification of differential gene expression, gene loss, and gene gain events in a high-throughput manner in the polyploids compared to their diploid parent.</span></font></li></ul></div>
+<div class="paragraph" style="text-align:left;"><strong style="">Biological Scientist</strong>&nbsp;(computational biology)<font size="2"><em> - University of Florida, Gainesville, FL, USA</em></font><br /><font size="2">As a Biological Scientist in computational biology at UF, I was involved in wide variety of genomic and transcriptomic projects. Below are brief details of the some of the main projects that I impacted.</font><br /><ul style=""><li style=""><font size="2"><span style="">Computational gene prediction in Tomato Whole Genome:&nbsp;</span><span style="">A computational pipeline was developed to construct a highly comprehensive training set of well annotated tomato genes, and then used this set to re-train TWINSCAN ab initio gene finder to accurately identify genes in the tomato whole genome sequence.&nbsp;</span></font></li><li style=""><font size="2"><span style="">Strawberry global gene expression:&nbsp;</span><span style="">A novel computational approach was developed to obtain comprehensive coverage of the cultivated strawberry (<em style="">Fragaria</em>&nbsp;&times;&nbsp;<em style="">ananassa</em>&nbsp;Duchesne) transcriptome.</span></font></li><li style=""><font size="2"><span style="">Genome evolution in natural populations and synthetic lines of&nbsp;<em style="">Tragopogon</em>:&nbsp;</span><span style="">This project involved understanding the impact of polyploidization on genome evolution and gene function using&nbsp;<em style="">Tragopogon</em>&nbsp;(sunflower family) as a model organism. Computational pipelines were developed to accelerate the identification of differential gene expression, gene loss, and gene gain events in a high-throughput manner in the polyploids compared to their diploid parent.</span></font></li></ul></div>
 
 
 					
