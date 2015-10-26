@@ -10,7 +10,7 @@
 		
 		<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
 <link rel="stylesheet" type="text/css" href="http://cdn1.editmysite.com/editor/libraries/fancybox/fancybox.css?1234" />
-<link rel="stylesheet" type="text/css" href="files/main_style.css?1436986048" title="wsite-theme-css" />
+<link rel="stylesheet" type="text/css" href="files/main_style.css?1445882211" title="wsite-theme-css" />
 <link href='http://fonts.googleapis.com/css?family=Lato:400,300,300italic,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
 
@@ -41,7 +41,7 @@
 .wsite-not-footer h2.wsite-content-title a:hover, .wsite-not-footer .paragraph a:hover, .wsite-not-footer blockquote a:hover, #blogTable .blog-sidebar a:hover, #blogTable .blog-comments a:hover, #blogTable .blog-comments-bottom a:hover, #wsite-com-store a:hover, #wsite-com-product-gen a:hover {color:#a82e2e !important;}
 </style>
 <style>
-.wsite-background {background-image: url('//cdn1.editmysite.com/uploads/4/8/9/1/48918149/background-images/1220460443.jpg') !important;background-repeat: repeat !important;background-position: 0 0 !important;background-size: auto !important;background-color: transparent !important;background: inherit;}
+.wsite-background {background-image: url("//cdn1.editmysite.com/uploads/4/8/9/1/48918149/background-images/1220460443.jpg") !important;background-repeat: repeat !important;background-position: 0 0 !important;background-size: auto !important;background-color: transparent !important;background: inherit;}
 </style>
 		<script><!--
 var STATIC_BASE = '//cdn1.editmysite.com/';
@@ -59,10 +59,11 @@ var STYLE_PREFIX = 'wsite';
 			initPublishedFlyoutMenus(
 				[{"id":"963077351779198537","title":"Home","url":"index.html","target":""},{"id":"283863555600145217","title":"CV","url":"cv.html","target":""},{"id":"430658820693756186","title":"Publications","url":"publications.html","target":""},{"id":"982310335120146381","title":"Presentations","url":"presentations.html","target":""},{"id":"700184943996227885","title":"Collaboration\/Consulting","url":"collaborationconsulting.html","target":""}],
 				"430658820693756186",
-				"<li class=\"wsite-menu-item-wrap\"><a href=\"#\" data-membership-required=\"\" class=\"wsite-menu-item\">{{title}}<\/a><\/li>",
+				'',
 				'active',
 				false,
-				{"menu\/submenu-main":"<div class=\"wsite-menu-wrap\" style=\"display:none\">{{! Designer note: \"wsite-menu-wrap\" required on submenu wrapper }}\n\t<ul class=\"wsite-menu\">{{! Designer note: \"wsite-menu\" required on submenu element }}\n\t\t{{#children}}{{> menu\/submenu-item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","menu\/submenu-item":"<li{{#id}} id=\"{{id}}\"{{\/id}} class=\"wsite-menu-subitem-wrap{{#current_page}} wsite-nav-current{{\/current_page}}\">{{! Designer note: id required & \"wsite-menu-subitem-wrap\" required on the item wrap }}\n\t<a href=\"{{itemlink}}\"{{#target}} target=\"{{target}}\"{{\/target}} class=\"wsite-menu-subitem\">{{! Designer note: \"wsite-menu-subitem\" required on the item link }}\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{itemtitle}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> menu\/submenu-main}}{{\/has_children}}\n<\/li>\n","menu\/main":"<ul class=\"wsite-menu-default\">{{> menu\/main-without-wrap}}<\/ul>{{! Designer note: \"wsite-menu-default\" required on menu element }}\n","menu\/main-without-wrap":"{{#links}}{{!\n}}{{#current_page}}{{> menu\/item-current}}{{\/current_page}}{{!\n}}{{^current_page}}{{> menu\/item}}{{\/current_page}}{{!\n}}{{\/links}}\n","menu\/item-current":"<li{{#id}} id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">{{! Designer note: id required & \"wsite-menu-item-wrap\" required on the item wrapper }}\n\t<a href=\"{{itemlink}}\"{{#target}} target=\"{{target}}\"{{\/target}} class=\"wsite-menu-item\">{{! Designer note: \"wsite-menu-item\" required on the item link }}\n\t\t{{{itemtitle}}}\n\t<\/a>\n\t{{#has_children}}{{> menu\/submenu-main}}{{\/has_children}}\n<\/li>\n","menu\/item":"<li{{#id}} id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">{{! Designer note: id required & \"wsite-menu-item-wrap\" required on the item wrapper }}\n\t<a href=\"{{itemlink}}\" data-membership-required=\"{{membership-required}}\"{{#target}} target=\"{{target}}\"{{\/target}} class=\"wsite-menu-item\">{{! Designer note: \"wsite-menu-item\" required on the item link }}\n\t\t{{{itemtitle}}}\n\t<\/a>\n\t{{#has_children}}{{> menu\/submenu-main}}{{\/has_children}}\n<\/li>\n"}
+				{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-item-wrap\"\n\t>\n\t<a href=\"{{url}}\"\n\t\t{{#target}}target=\"{{target}}\"{{\/target}}\n\t\tclass=\"wsite-menu-item\"\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a href=\"{{url}}\"\n\t\t{{#target}}target=\"{{target}}\"{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
+				{}
 			)
 		}
 		if (jQuery) {
@@ -83,37 +84,62 @@ var STYLE_PREFIX = 'wsite';
 			<div class="container">
 				<table>
 					<tr>
-						<td id="nav-wrap"><ul class="wsite-menu-default"><li id="pg963077351779198537" class="wsite-menu-item-wrap">
-	<a href="index.html" data-membership-required="0" class="wsite-menu-item">
-		Home
-	</a>
-	
-</li>
-<li id="pg283863555600145217" class="wsite-menu-item-wrap">
-	<a href="cv.html" data-membership-required="0" class="wsite-menu-item">
-		CV
-	</a>
-	
-</li>
-<li id="active" class="wsite-menu-item-wrap">
-	<a href="publications.html" class="wsite-menu-item">
-		Publications
-	</a>
-	
-</li>
-<li id="pg982310335120146381" class="wsite-menu-item-wrap">
-	<a href="presentations.html" data-membership-required="0" class="wsite-menu-item">
-		Presentations
-	</a>
-	
-</li>
-<li id="pg700184943996227885" class="wsite-menu-item-wrap">
-	<a href="collaborationconsulting.html" data-membership-required="0" class="wsite-menu-item">
-		Collaboration/Consulting
-	</a>
-	
-</li>
-
+						<td id="nav-wrap"><ul class="wsite-menu-default">
+		<li id="pg963077351779198537"
+			class="wsite-menu-item-wrap"
+			>
+			<a href="index.html"
+				
+				class="wsite-menu-item"
+				>
+				Home
+			</a>
+			
+		</li>
+		<li id="pg283863555600145217"
+			class="wsite-menu-item-wrap"
+			>
+			<a href="cv.html"
+				
+				class="wsite-menu-item"
+				>
+				CV
+			</a>
+			
+		</li>
+		<li id="active"
+			class="wsite-menu-item-wrap"
+			>
+			<a href="publications.html"
+				
+				class="wsite-menu-item"
+				>
+				Publications
+			</a>
+			
+		</li>
+		<li id="pg982310335120146381"
+			class="wsite-menu-item-wrap"
+			>
+			<a href="presentations.html"
+				
+				class="wsite-menu-item"
+				>
+				Presentations
+			</a>
+			
+		</li>
+		<li id="pg700184943996227885"
+			class="wsite-menu-item-wrap"
+			>
+			<a href="collaborationconsulting.html"
+				
+				class="wsite-menu-item"
+				>
+				Collaboration/Consulting
+			</a>
+			
+		</li>
 </ul>
 </td>
 						<td class="search"></td>
@@ -124,37 +150,62 @@ var STYLE_PREFIX = 'wsite';
 		</div>
 	</div><!-- end header-wrap -->  
 
-	<div id="navmobile" class="nav"><ul class="wsite-menu-default"><li id="pg963077351779198537" class="wsite-menu-item-wrap">
-	<a href="index.html" data-membership-required="0" class="wsite-menu-item">
-		Home
-	</a>
-	
-</li>
-<li id="pg283863555600145217" class="wsite-menu-item-wrap">
-	<a href="cv.html" data-membership-required="0" class="wsite-menu-item">
-		CV
-	</a>
-	
-</li>
-<li id="active" class="wsite-menu-item-wrap">
-	<a href="publications.html" class="wsite-menu-item">
-		Publications
-	</a>
-	
-</li>
-<li id="pg982310335120146381" class="wsite-menu-item-wrap">
-	<a href="presentations.html" data-membership-required="0" class="wsite-menu-item">
-		Presentations
-	</a>
-	
-</li>
-<li id="pg700184943996227885" class="wsite-menu-item-wrap">
-	<a href="collaborationconsulting.html" data-membership-required="0" class="wsite-menu-item">
-		Collaboration/Consulting
-	</a>
-	
-</li>
-
+	<div id="navmobile" class="nav"><ul class="wsite-menu-default">
+		<li id="pg963077351779198537"
+			class="wsite-menu-item-wrap"
+			>
+			<a href="index.html"
+				
+				class="wsite-menu-item"
+				>
+				Home
+			</a>
+			
+		</li>
+		<li id="pg283863555600145217"
+			class="wsite-menu-item-wrap"
+			>
+			<a href="cv.html"
+				
+				class="wsite-menu-item"
+				>
+				CV
+			</a>
+			
+		</li>
+		<li id="active"
+			class="wsite-menu-item-wrap"
+			>
+			<a href="publications.html"
+				
+				class="wsite-menu-item"
+				>
+				Publications
+			</a>
+			
+		</li>
+		<li id="pg982310335120146381"
+			class="wsite-menu-item-wrap"
+			>
+			<a href="presentations.html"
+				
+				class="wsite-menu-item"
+				>
+				Presentations
+			</a>
+			
+		</li>
+		<li id="pg700184943996227885"
+			class="wsite-menu-item-wrap"
+			>
+			<a href="collaborationconsulting.html"
+				
+				class="wsite-menu-item"
+				>
+				Collaboration/Consulting
+			</a>
+			
+		</li>
 </ul>
 </div>
 
@@ -375,6 +426,7 @@ var STYLE_PREFIX = 'wsite';
 	<script type="text/javascript" src="files/theme/mobile.js"></script>
 
 
+		
 		
 	</body>
 </html>
